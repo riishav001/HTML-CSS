@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <style>
+       table,th,td{
+        border:1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+       }
+       *{
+        margin: 0;
+        padding: 0;
+
+       }
+       body{
+        background-color:white;
+       }
+       header{
+        color: white;
+        padding: 20px;
+        background-color: rgb(156, 42, 42);
+        text-align: center;
+        align-items: center;
+       }
+       footer{
+        color: white;
+        text-align: center;
+        padding: 20px;
+        background-color: black;
+       }
+       nav a{
+        color: white;
+        text-decoration:none ;
+        margin: 0 40px;
+        
+       }
+       .hero{
+        text-align: center;
+       }
+       .logo{
+        margin-bottom: 20px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+       <h1 class="logo">The Royals Grocery</h1>
+        <nav>
+            <a href="home.html">Home</a> 
+            <a href="menu.html">Menu</a> 
+            <a href="Order.html">Order</a> 
+            <a href="contact.html">Contact Us</a> 
+        </nav>
+    </header>
+    <section>
+        <div class="hero">
+            <h2>Welcome to our shop</h2>
+            <h5>Get fresh frits and vegetables</h5>
+
+        </div>
+    </section>
+    <ol>
+        <li>Apple</li>
+        <img src="https://static.vecteezy.com/system/resources/previews/029/228/888/large_2x/apple-transparent-background-free-png.png" alt="Apple" width="100">
+        <a href="https://static.vecteezy.com/system/resources/previews/029/228/888/large_2x/apple-transparent-background-free-png.png"><br>
+        Buy Apple</a><br><br>
+        <li>Banana</li>
+        <img src="https://img.freepik.com/premium-psd/banana-isolated-transparent-background_436336-1214.jpg?w=2000" alt="Banana" width="100">
+        <a href="https://img.freepik.com/premium-psd/banana-isolated-transparent-background_436336-1214.jpg?w=2000"><br>
+        Buy Banana</a><br><br>
+        <li>Grapes</li>
+        <img src="https://th.bing.com/th/id/R.4b80b31df9b99dd3b25c3f820a5f801c?rik=jdrF8BCpCXwPTw&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-grapesgrapesfruitbluesweet-481521375967iqqtb.png&ehk=dO18Axbe%2bJ7GgZY8RdgePJ%2fnpDwnLU8WIDLqJ6cEdQI%3d&risl=1&pid=ImgRaw&r=0" alt="Grapes" width="100">
+        <a href="https://th.bing.com/th/id/R.4b80b31df9b99dd3b25c3f820a5f801c?rik=jdrF8BCpCXwPTw&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-grapesgrapesfruitbluesweet-481521375967iqqtb.png&ehk=dO18Axbe%2bJ7GgZY8RdgePJ%2fnpDwnLU8WIDLqJ6cEdQI%3d&risl=1&pid=ImgRaw&r=0"><br>
+        Buy Grapes</a><br><br>
+    </ol>
+    <table >
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Discount</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>200</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>40</td>
+            <td>0%</td>
+        </tr>
+         <tr>
+            <td>Grapes</td>
+            <td>130</td>
+            <td>10%</td>
+        </tr>
+    </table><br><br><br><br>
+    <h2>Buy Now </h2>
+    <form action="submit">
+        <label for="Name">Name : </label>
+        <input type="text"><br>
+        Buy :
+        <input type="checkbox" value="apple">Apple
+        <input type="checkbox" value="banana">Banana
+        <input type="checkbox" value="grapes">Grapes
+        <br>
+        Address :
+        <input type="textarea">
+        <br>
+        <label for="dob">Schedule Delivery : </label>
+        <input type="date">
+        <br>
+         Payment Method : 
+        <input type="radio" name="payment" value="cod">COD
+        <input type="radio" name="payment" value="upi">UPI
+        <input type="radio" name="payment" value="creditCard">Credit Card
+        <br><br>
+        
+        <input type="submit" value="Order Now">
+    </form><br><br><br><br>
+    <footer>
+        <p>All copyright reserved</p>
+    </footer>
+</body>
+</html>
