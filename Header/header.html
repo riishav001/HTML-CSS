@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Clone</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background:#050136;
+    color:white;
+    padding:12px 40px;
+}
+
+.parent{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.left-component{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+nav{
+    display:flex;
+    gap:22px;
+}
+
+nav a{
+    color:#c9d1d9;
+    text-decoration:none;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:white;
+}
+
+.right-component{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.search-box{
+    position:relative;
+}
+
+.search-box input{
+    background:white;
+    border:1px solid #edf0f4;
+    padding:7px 35px 7px 10px;
+    border-radius:6px;
+    color:white;
+}
+
+button{
+     padding:7px 10px 7px 10px;
+     border-radius: 6px;
+}
+
+
+.right-component a{
+    color:#c9d1d9;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.signup-btn{
+    border:1px solid #c9d1d9;
+    padding:6px 12px;
+    border-radius:6px;
+}
+
+
+.hero{
+    background: #090546;
+    color:white;
+    text-align:center;
+    padding:100px 20px 100px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:700;
+    max-width:800px;
+    margin:0 auto 20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#c9d1d9;
+    max-width:750px;
+    margin:0 auto 40px;
+}
+
+
+
+.hero-search{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.hero-search input{
+    padding:14px 20px;
+    width:320px;
+    border-radius:8px;
+    border:none;
+    font-size:16px;
+}
+
+.hero-search button{
+    padding:14px 25px;
+    background:#238636;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.hero-search button:hover{
+    background:#2ea043;
+}
+
+.secondary-btn{
+    margin-top:20px;
+    background:transparent;
+    border:1px solid #c9d1d9;
+    color:white;
+    padding:14px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+footer{
+    text-align: center;
+    background:#050136;
+    color:white;
+    padding:12px 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="parent">
+        <div class="left-component">
+            <img src="Gitlogo.png" width="55">
+            <nav>
+                <a href="#">Platform</a>
+                <a href="#">Solutions</a>
+                <a href="#">Resources</a>
+                <a href="#">Open Source</a>
+                <a href="#">Enterprise</a>
+                <a href="#">Pricing</a>
+            </nav>
+        </div>
+
+        <div class="right-component">
+            <div class="search-box">
+                <input type="text" placeholder="Search or jump to...">
+                <button>Search</button>
+            </div>
+            <a href="#">Sign in</a>
+            <a href="#" class="signup-btn">Sign up</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>The future of building happens together</h1>
+    <p>
+        Tools and trends evolve, but collaboration endures. With GitHub,
+        developers, agents, and code come together on one platform.
+    </p>
+
+    <div class="hero-search">
+        <input type="email" placeholder="Enter your email">
+        <button>Sign up for GitHub</button>
+    </div>
+
+    <button class="secondary-btn">Try GitHub Copilot free</button>
+</section>
+<footer>
+    All Rights Reserved
+</footer>
+
+</body>
+</html>
