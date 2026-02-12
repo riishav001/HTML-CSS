@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        .right-content a{
+            color: white ;
+            text-decoration: none;
+        }
+        .right-content{
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .hero{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            align-items: center;
+            height: 80vh;
+            justify-content: center;
+            background:url(https://tse3.mm.bing.net/th/id/OIP.0V5X51i9fyreepYFvIpTvAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3) center/cover;
+        }
+        .btn{
+            padding: 15px 40px;
+            border-radius: 8px;
+            background-color: bisque;
+        }
+        .btn:hover{
+            background-color: rgb(207, 150, 81);
+        }
+        footer{
+            background-color: black;
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        .flex{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .item{
+            flex:1;
+            background-color:rgb(239, 160, 63);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        section{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="left-content">
+                <h1>CSS Responsive Master Lab</h1>
+            </div>
+            <div class="right-content">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">About</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <h1>Learn Responsive Web Design</h1>
+        <p>Flexbox . Grid . Media . Queries . Layout</p>
+        <button class="btn">Get Started</button>
+    </div>
+    <section style="background-color: bisque;">
+        <h1>FlexBox</h1>
+        <div class="flex">
+            <div class="item">Box1</div>
+            <div class="item">Box2</div>
+            <div class="item">Box3</div>
+            <div class="item">Box4</div>
+        </div>
+
+    </section>
+    <footer>
+        <h3>All Rights Reserved</h3>
+    </footer>
+</body>
+</html>
