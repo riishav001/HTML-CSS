@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechAgency</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+body{
+    background: radial-gradient(circle at top right,#1c3f2a 0%,#0c1b2d 30%,#071428 70%);
+    color:#ffffff;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#8fd12f;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+nav ul li{
+    font-size:15px;
+    cursor:pointer;
+    opacity:0.8;
+}
+
+nav ul li:hover{
+    opacity:1;
+}
+
+.btn{
+    background:#8fd12f;
+    padding:10px 22px;
+    border-radius:8px;
+    color:#fff;
+    font-weight:600;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 8%;
+}
+
+.hero small{
+    color:#8fd12f;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-top:20px;
+    font-weight:800;
+}
+
+.hero h1 span{
+    background:linear-gradient(90deg,#bbe557,#c0f17b);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    margin:25px auto;
+    max-width:600px;
+    opacity:0.7;
+    line-height:1.6;
+}
+
+.hero-buttons{
+    margin-top:30px;
+}
+
+.hero-buttons button{
+    margin:10px;
+    padding:14px 28px;
+    border:none;
+    border-radius:10px;
+    background:#8fd12f;
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.hero-buttons button:hover{
+    opacity:0.85;
+}
+
+
+.section{
+    padding:60px 8%;
+}
+
+.section h2{
+    margin-bottom:30px;
+}
+
+.cards{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:260px;
+    background:#142238;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin:20px 0 10px;
+}
+
+.card p{
+    opacity:0.6;
+    line-height:1.6;
+}
+
+.contact{
+    margin:80px 8%;
+    background:#0f1f35;
+    padding:50px;
+    border-radius:25px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.contact-left{
+    flex:1;
+    min-width:250px;
+}
+
+.contact-left h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.contact-left p{
+    opacity:0.6;
+}
+
+.contact-right{
+    flex:1;
+    min-width:250px;
+}
+
+.contact-right input,
+.contact-right textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.1);
+    background:#142238;
+    color:#fff;
+}
+
+.contact-right textarea{
+    resize:none;
+    height:100px;
+}
+
+.contact-right button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#8fd12f;
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.contact-right button:hover{
+    opacity:0.85;
+}
+
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:36px;
+}
+
+.contact{
+    flex-direction:column;
+}
+
+nav ul{
+    display:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+
+<nav>
+    <div class="logo">Tech<span>Agency</span></div>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li class="btn">Let's Talk</li>
+    </ul>
+</nav>
+
+
+<section class="hero">
+    <small>DIGITAL INNOVATION 2026</small>
+    <h1>Design the <span>Future</span> of your Brand</h1>
+    <p>We blend high-end aesthetics with cutting-edge code to build digital products that convert.</p>
+
+    <div class="hero-buttons">
+        <button>Start a Project</button>
+        <button>Our Portfolio</button>
+    </div>
+</section>
+
+
+<section class="section">
+    <h2>Our Expertise</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>UI/UX Design</h3>
+            <p>Creating immersive user journeys that look stunning on any device.</p>
+        </div>
+
+        <div class="card">
+            <h3>Development</h3>
+            <p>Clean, scalable React and Next.js applications built for speed.</p>
+        </div>
+
+        <div class="card">
+            <h3>SEO Mastery</h3>
+            <p>Ranking your business on the first page of search results.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact">
+    <div class="contact-left">
+        <h3>Ready to grow?</h3>
+        <p>Drop us a line and let's build something epic.</p>
+    </div>
+
+    <div class="contact-right">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Tell us about your project"></textarea>
+        <button>Send Message</button>
+    </div>
+</section>
+
+</body>
+</html>
