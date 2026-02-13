@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Master File</title>
+
+    <style>
+        /* ===== CSS RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+            color: darkblue;
+        }
+
+        /* ===== LINKS ===== */
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        /* ===== LISTS ===== */
+        ul {
+            margin-left: 20px;
+        }
+
+        /* ===== TABLE ===== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* ===== FORM ===== */
+        input, textarea, select, button {
+            padding: 8px;
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        button {
+            background: darkblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: green;
+        }
+
+        /* ===== FLEXBOX ===== */
+        .flex-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .flex-item {
+            background: lightblue;
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+        }
+
+        /* ===== GRID ===== */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .grid-item {
+            background: lightcoral;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* ===== POSITION ===== */
+        .position-parent {
+            position: relative;
+            height: 150px;
+            background: #ddd;
+        }
+
+        .position-child {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+
+        /* ===== TRANSITION ===== */
+        .box {
+            width: 100px;
+            height: 100px;
+            background: purple;
+            transition: 0.5s;
+        }
+
+        .box:hover {
+            background: green;
+            transform: scale(1.2);
+        }
+
+        /* ===== ANIMATION ===== */
+        @keyframes slide {
+            from { left: 0; }
+            to { left: 200px; }
+        }
+
+        .animate {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: relative;
+            animation: slide 2s infinite alternate;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>HTML & CSS Complete Master File</h1>
+        <p>This file demonstrates complete major syllabus concepts.</p>
+    </section>
+
+    <section>
+        <h2>Text Formatting</h2>
+        <p><b>Bold</b>, <i>Italic</i>, <u>Underline</u></p>
+        <p>H<sub>2</sub>O and 10<sup>2</sup></p>
+    </section>
+
+    <section>
+        <h2>Lists</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Sunny</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Form</h2>
+        <form>
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter Email">
+            <input type="password" placeholder="Password">
+            <input type="date">
+            <select>
+                <option>Select Course</option>
+                <option>HTML</option>
+                <option>CSS</option>
+            </select>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Flexbox</h2>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Grid</h2>
+        <div class="grid-container">
+            <div class="grid-item">A</div>
+            <div class="grid-item">B</div>
+            <div class="grid-item">C</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Position</h2>
+        <div class="position-parent">
+            Parent
+            <div class="position-child">Absolute</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Transition</h2>
+        <div class="box"></div>
+    </section>
+
+    <section>
+        <h2>Animation</h2>
+        <div class="animate"></div>
+    </section>
+
+</body>
+</html>
