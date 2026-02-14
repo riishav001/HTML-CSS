@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+header{
+    background-color: black;
+}
+footer{
+    background-color: rgb(8, 65, 34);
+    color: white;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+.parent{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+
+}
+a{
+    text-decoration: none;
+}
+h3{
+    color: rgb(241, 241, 97);
+}
+.bharti{
+    color: orange;
+}
+h1{
+    color: green;
+}
+.email{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.num{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.parent2{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.icon{
+    gap: 20px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}

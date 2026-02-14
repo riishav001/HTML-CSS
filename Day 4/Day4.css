@@ -9,29 +9,59 @@ header{
     color: white;
     text-align: center;
 }
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
 .box{
     height: 500px;
     width: 500px;
     margin: 20px;
+    margin-top: 47px;
     border-radius: 20px;
     background-color: rgb(229, 161, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px
 }
 .box1{
     height: 300px;
     width: 300px;
-    margin-left: 40px;
-    background-color: yellow;
+    background-color: rgb(175, 156, 156);
     align-items: center;
     display: flex;
     justify-content: center;
     border-radius: 20px;
 }
-.box2{
-    height: 50px;
-    width: 50px;
-    background-color: red;
-}
-.box1:hover{
-   border-left: 20px solid red;
+.box1 img{
+     max-width: 99%; 
+     height: auto; 
+     border-radius: 20px;
 
+}
+
+.box1 img:hover{
+    max-width: 100%;
+    background-color: yellow;
+}
+.btn{
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.btn:hover{
+    font-size: 15.7px;
+}
+.id{
+    height: 500px;
+    width: 676px;
+    margin: 20px;
+    margin-top: 47px;
+    border-radius: 20px;
+    background-color: rgb(229, 161, 78);
+    text-align: center;
+    color: white;
 }

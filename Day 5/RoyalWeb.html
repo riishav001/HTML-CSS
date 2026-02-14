@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML CSS Practice Lab</title>
+
+<style>
+
+/* ================= RESET ================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+:root{
+--primary:#2563eb;
+--secondary:#06b6d4;
+--dark:#0f172a;
+--light:#f1f5f9;
+}
+
+body{
+background:var(--light);
+color:#111;
+}
+
+/* ================= NAVBAR ================= */
+header{
+background:var(--dark);
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--secondary);
+}
+
+/* ================= HERO ================= */
+.hero{
+height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:white;
+}
+
+.hero h1{
+font-size:clamp(2rem,5vw,4rem);
+animation:fade 1.5s ease;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;}
+}
+
+section{
+padding:70px 40px;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+/* ================= CARDS ================= */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.demo{
+margin-top:15px;
+padding:15px;
+border:2px dashed #ccc;
+}
+
+/* FLEX DEMO */
+.flex-demo{
+display:flex;
+gap:10px;
+}
+.flex-demo div{
+flex:1;
+background:var(--primary);
+color:white;
+padding:15px;
+text-align:center;
+}
+
+/* GRID DEMO */
+.grid-demo{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+}
+.grid-demo div{
+background:var(--secondary);
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* ================= TABLE ================= */
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+tr:nth-child(even){
+background:#e2e8f0;
+}
+
+/* ================= FORM ================= */
+form{
+max-width:600px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:10px;
+}
+
+input,select,textarea{
+width:100%;
+margin:8px 0;
+padding:10px;
+border:1px solid #ccc;
+}
+
+input:focus{
+outline:2px solid var(--secondary);
+}
+
+button{
+background:var(--primary);
+color:white;
+border:none;
+padding:12px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:var(--secondary);
+}
+
+/* ================= EFFECT ================= */
+.effect-box{
+background:var(--primary);
+color:white;
+padding:20px;
+text-align:center;
+transition:.4s;
+}
+.effect-box:hover{
+transform:scale(1.1) rotate(2deg);
+box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+/* ================= INTERACTIVE TABS ================= */
+.practice-system input{
+display:none;
+}
+
+.tabs{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:25px;
+}
+
+.tabs label{
+padding:12px 20px;
+background:#e2e8f0;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+}
+
+.tabs label:hover{
+background:var(--primary);
+color:white;
+}
+
+.content .box{
+display:none;
+background:white;
+padding:25px;
+border-radius:10px;
+max-width:700px;
+margin:auto;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+#tab1:checked ~ .content .html,
+#tab2:checked ~ .content .lists,
+#tab3:checked ~ .content .tables,
+#tab4:checked ~ .content .forms{
+display:block;
+}
+
+/* ================= FAQ ================= */
+details{
+background:white;
+margin:10px auto;
+padding:15px;
+max-width:700px;
+border-radius:8px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+background:var(--dark);
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:768px){
+nav{
+flex-direction:column;
+gap:10px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>PracticeLab</h2>
+<ul>
+<li><a href="#html">HTML</a></li>
+<li><a href="#css">CSS</a></li>
+<li><a href="#practice">Practice</a></li>
+<li><a href="#form">Forms</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h1>HTML & CSS Practice Lab</h1>
+<p>Learn & Practice Every Topic Visually</p>
+</section>
+
+<!-- HTML PRACTICE -->
+<section id="html">
+<h2>HTML Practice Zone</h2>
+<div class="grid">
+<div class="card">
+<h3>Lists</h3>
+<div class="demo">
+<ul><li>HTML</li><li>CSS</li></ul>
+<ol><li>Step 1</li><li>Step 2</li></ol>
+</div>
+</div>
+
+<div class="card">
+<h3>Semantic Tags</h3>
+<div class="demo">
+<article>Article</article>
+<aside>Aside</aside>
+<mark>Highlight</mark>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CSS PRACTICE -->
+<section id="css">
+<h2>CSS Practice Zone</h2>
+<div class="grid">
+<div class="card">
+<h3>Flexbox</h3>
+<div class="demo flex-demo">
+<div>1</div><div>2</div><div>3</div>
+</div>
+</div>
+
+<div class="card">
+<h3>Grid</h3>
+<div class="demo grid-demo">
+<div>A</div><div>B</div><div>C</div>
+</div>
+</div>
+
+<div class="card">
+<h3>Hover Effect</h3>
+<div class="demo">
+<div class="effect-box">Hover Me</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- INTERACTIVE PRACTICE -->
+<section id="practice" class="practice-system">
+<h2>Interactive Practice Lab</h2>
+
+<input type="radio" name="tab" id="tab1" checked>
+<input type="radio" name="tab" id="tab2">
+<input type="radio" name="tab" id="tab3">
+<input type="radio" name="tab" id="tab4">
+
+<div class="tabs">
+<label for="tab1">HTML</label>
+<label for="tab2">Lists</label>
+<label for="tab3">Tables</label>
+<label for="tab4">Forms</label>
+</div>
+
+<div class="content">
+
+<div class="box html">
+<h3>HTML Headings</h3>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<p>Paragraph example.</p>
+</div>
+
+<div class="box lists">
+<ul><li>Practice</li><li>Learn</li></ul>
+</div>
+
+<div class="box tables">
+<table>
+<tr><th>Name</th><th>Score</th></tr>
+<tr><td>Student</td><td>95</td></tr>
+</table>
+</div>
+
+<div class="box forms">
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<button>Submit</button>
+</div>
+
+</div>
+</section>
+
+<!-- FORM LAB -->
+<section id="form">
+<h2>Forms Practice Lab</h2>
+<form>
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email">
+<input type="date">
+<input type="color">
+<input type="range">
+
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female
+
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+
+<select>
+<option>Select City</option>
+<option>Delhi</option>
+<option>Mumbai</option>
+</select>
+
+<textarea placeholder="Message"></textarea>
+<button>Submit</button>
+</form>
+</section>
+
+<section>
+<h2>FAQ</h2>
+<details>
+<summary>What is HTML?</summary>
+<p>HTML creates structure.</p>
+</details>
+<details>
+<summary>What is CSS?</summary>
+<p>CSS styles webpages.</p>
+</details>
+</section>
+
+<footer>
+<p>© 2026 HTML CSS Practice Lab — Built Using Only HTML & CSS</p>
+</footer>
+
+</body>
+</html>
